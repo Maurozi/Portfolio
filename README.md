@@ -1,2 +1,1 @@
-# Portfolio
-Portfolio of Mauro van der Duim
+# Portfolio website
