@@ -1,6 +1,6 @@
 nav {
     height: fit-content;
-    padding: 20px;
+    padding: 10px;
 }
 
 .navbar {
@@ -27,10 +27,11 @@ nav {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -1px;
     width: 100%;
-    height: 2px;
-    background: currentColor;
+    height: 5px;
+    border-radius: 10px;
+    background: #ffe3b0;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 180ms ease;

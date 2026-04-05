@@ -13,9 +13,20 @@ header h1 {
 
 header p {
     margin: 10px 0 0;
-    font-size: 1.25rem;
+    font-size: 30px;
     color: #ffffff;
     font-weight: 300;
+}
+
+.selector {
+    background-color: #ffe3b0;
+    padding: 8px;
+    color: #1a0d27;
+    font-family: zain, sans-serif;
+    font-size: 18px;
+    border-radius: 6px;
+    outline: none;
+    margin-top: 20px;
 }
 
 .code-section {
@@ -80,6 +91,19 @@ header p {
     color: #ffffff;
     font-weight: 500;
     transition: all 0.3s ease, border-color 0.3s ease;
+    animation: cardPopIn 420ms ease-out both;
+}
+
+.code-card:nth-child(2) {
+    animation-delay: 70ms;
+}
+
+.code-card:nth-child(3) {
+    animation-delay: 140ms;
+}
+
+.code-card:nth-child(4) {
+    animation-delay: 210ms;
 }
 
 .code-card:hover {
@@ -100,7 +124,26 @@ header p {
 
 .code-logo {
     width: 80px;
+    border-radius: 6px;
     height: auto;
     margin-top: auto;
     margin-left: auto;
+}
+
+@keyframes cardPopIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .code-card {
+        animation: none;
+    }
 }
