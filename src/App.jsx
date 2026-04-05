@@ -6,6 +6,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const iconsHref = `${import.meta.env.BASE_URL}icons.svg`
 
   return (
     <>
@@ -34,7 +35,7 @@ function App() {
       <section id="next-steps">
         <div id="docs">
           <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
+            <use href={`${iconsHref}#documentation-icon`}></use>
           </svg>
           <h2>Documentation</h2>
           <p>Your questions, answered</p>
@@ -55,7 +56,7 @@ function App() {
         </div>
         <div id="social">
           <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
+            <use href={`${iconsHref}#social-icon`}></use>
           </svg>
           <h2>Connect with us</h2>
           <p>Join the Vite community</p>
@@ -67,7 +68,7 @@ function App() {
                   role="presentation"
                   aria-hidden="true"
                 >
-                  <use href="/icons.svg#github-icon"></use>
+                  <use href={`${iconsHref}#github-icon`}></use>
                 </svg>
                 GitHub
               </a>
@@ -79,7 +80,7 @@ function App() {
                   role="presentation"
                   aria-hidden="true"
                 >
-                  <use href="/icons.svg#discord-icon"></use>
+                  <use href={`${iconsHref}#discord-icon`}></use>
                 </svg>
                 Discord
               </a>
@@ -91,7 +92,7 @@ function App() {
                   role="presentation"
                   aria-hidden="true"
                 >
-                  <use href="/icons.svg#x-icon"></use>
+                  <use href={`${iconsHref}#x-icon`}></use>
                 </svg>
                 X.com
               </a>
@@ -103,7 +104,7 @@ function App() {
                   role="presentation"
                   aria-hidden="true"
                 >
-                  <use href="/icons.svg#bluesky-icon"></use>
+                  <use href={`${iconsHref}#bluesky-icon`}></use>
                 </svg>
                 Bluesky
               </a>
