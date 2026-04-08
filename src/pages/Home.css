@@ -40,7 +40,8 @@ header {
     font-family: zain, sans-serif;
     font-size: 18px;
     border-radius: 6px;
-    outline: none;  
+    outline: none; 
+    border: none;
 }
 
 .home-title {

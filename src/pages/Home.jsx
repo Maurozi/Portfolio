@@ -24,7 +24,7 @@ export default function Home() {
       <header className="home-hero">
         <div className='home-div'>
           <div className='home-text'>
-            <h1 className="home-title">Hi, I'm Mauro</h1>
+            <h1 className="home-title">Porftolio</h1>
             <p className="home-intro">
               I design and build clean digital products with a focus on usability,
               speed, and clarity.
