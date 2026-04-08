@@ -1,26 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Lexend:wght@100..900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
-
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  scrollbar-width: none;
 }
 
 body {
-  margin: 0;
-  font-family: zain, sans-serif;
-  background:
-    linear-gradient(to bottom, rgba(33, 17, 42, 0.12), rgba(22, 12, 32, 0.92)),
-    radial-gradient(circle at 15% 10%, #3d2a5f 0%, transparent 80%),
-    radial-gradient(circle at 85% 20%, #654a5e 0%, transparent 80%),
-    #0d1a24;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #ffffff;
-  line-height: 1.55;
-  min-height: 100vh;
-}
-
-a {
-  color: inherit;
+  font-family: sans-serif;
 }
