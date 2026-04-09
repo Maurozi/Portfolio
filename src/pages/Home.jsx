@@ -12,6 +12,7 @@ import diplomaImage from "../assets/Diploma.png"
 function Home() {
   const projectsRef = useRef(null)
   const aboutRef = useRef(null)
+  const contactRef = useRef(null)
 
   const scrollToProjects = () => {
     projectsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
@@ -19,6 +20,10 @@ function Home() {
 
   const scrollToAbout = () => {
     aboutRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
+
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
   }
 
   const fadeUp = {
@@ -56,7 +61,7 @@ function Home() {
           <Motion.h1 variants={childFadeUp}>Mauro van der Duim</Motion.h1>
           <Motion.div className="hero-buttons" variants={childFadeUp}>
             <button onClick={scrollToAbout}>About Me</button>
-            <button>Contact</button>
+            <button onClick={scrollToContact}>Contact</button>
             <div className="socials-anchors">
               <a href="https://www.linkedin.com/in/mauro-van-der-duim-79770b3b9"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                 <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd" />
@@ -129,7 +134,7 @@ function Home() {
         <img src={diplomaImage} alt="Diploma" />
       </Motion.div>
 
-      <Motion.div className="contact" variants={childFadeUp} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
+      <Motion.div className="contact" variants={childFadeUp} ref={contactRef} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
         <h1>Contact</h1>
         <Motion.div className="contact-form" variants={childFadeUp} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
           <p>Feel free to reach out! I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
