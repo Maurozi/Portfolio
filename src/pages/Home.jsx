@@ -114,17 +114,19 @@ function Home() {
 
       <Motion.div className="about-me" ref={aboutRef} variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
         <Motion.div className="about-me-content" variants={childFadeUp}>
-          <h1>About me</h1>
-          <p>
-            Hi, I’m Mauro. I’m a Software Engineering student at the Amsterdam University of Applied Siences (HvA) and a developer at a creative agency in Haarlem. Based in Den Helder, I specialize in the sweet spot between clean design and solid code.
-          </p>
-          <p>What I bring to the table:
-          </p>
-          <ul>
-            <li>Professional Workflow: I work with Agile/Scrum and real Product Owners to deliver structured results.</li>
-            <li>Design & Code: I take projects from Figma designs to fully deployed applications.</li>
-            <li>Clear Communication: I’m great at explaining technical "code talk" in simple language that anyone can understand.</li>
-          </ul>
+          <div className="about-me-text">
+            <h1>About me</h1>
+            <p>
+              Hi, I’m Mauro. I’m a Software Engineering student at the Amsterdam University of Applied Siences (HvA) and a developer at a creative agency in Haarlem. Based in Den Helder, I specialize in the sweet spot between clean design and solid code.
+            </p>
+            <p>What I bring to the table:
+            </p>
+            <ul>
+              <li>Professional Workflow: I work with Agile/Scrum and real Product Owners to deliver structured results.</li>
+              <li>Design & Code: I take projects from Figma designs to fully deployed applications.</li>
+              <li>Clear Communication: I’m great at explaining technical "code talk" in simple language that anyone can understand.</li>
+            </ul>
+          </div>
           <button>Download resume <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M13 11.15V4a1 1 0 1 0-2 0v7.15L8.78 8.374a1 1 0 1 0-1.56 1.25l4 5a1 1 0 0 0 1.56 0l4-5a1 1 0 1 0-1.56-1.25L13 11.15Z" clip-rule="evenodd" />
             <path fill-rule="evenodd" d="M9.657 15.874 7.358 13H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2.358l-2.3 2.874a3 3 0 0 1-4.685 0ZM17 16a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H17Z" clip-rule="evenodd" />
@@ -137,7 +139,7 @@ function Home() {
       <Motion.div className="contact" variants={childFadeUp} ref={contactRef} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
         <h1>Contact</h1>
         <Motion.div className="contact-form" variants={childFadeUp} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
-          <p>Feel free to reach out! I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+          <p>Are you interested or intrigued by my apps/designs? <br></br>Contact me here:</p>
           <div className="contact-information">
             <input type="text" placeholder="Your name" />
             <input type="email" placeholder="Your email" />
