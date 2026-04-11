@@ -8,12 +8,22 @@ import chatbotChat from "../assets/Chatbot-chat.png"
 import ceBanner from "../assets/CE-banner.png"
 import cePhone1 from "../assets/CE-phone1.png"
 import diplomaImage from "../assets/Diploma.png"
+import resumeLink from "../assets/CV_Mauro_van_der_Duim.pdf"
 import { Link } from "react-router-dom"
 
 function Home() {
   const projectsRef = useRef(null)
   const aboutRef = useRef(null)
   const contactRef = useRef(null)
+  const downloadResume = () => {
+    const link = document.createElement("a")
+    link.href = resumeLink
+    link.download = "Mauro_van_der_Duim_Resume.pdf"
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
+
 
   const scrollToProjects = () => {
     projectsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" })
@@ -135,10 +145,11 @@ function Home() {
               <li>Clear Communication: I’m great at explaining technical "code talk" in simple language that anyone can understand.</li>
             </ul>
           </div>
-          <button>Download resume <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <button onClick={downloadResume}>Download resume 
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M13 11.15V4a1 1 0 1 0-2 0v7.15L8.78 8.374a1 1 0 1 0-1.56 1.25l4 5a1 1 0 0 0 1.56 0l4-5a1 1 0 1 0-1.56-1.25L13 11.15Z" clip-rule="evenodd" />
             <path fill-rule="evenodd" d="M9.657 15.874 7.358 13H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2.358l-2.3 2.874a3 3 0 0 1-4.685 0ZM17 16a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H17Z" clip-rule="evenodd" />
-          </svg>
+            </svg>
           </button>
         </Motion.div>
         <img src={diplomaImage} alt="Diploma" />
