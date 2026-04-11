@@ -31,14 +31,16 @@ export default function ChatbotPage() {
 
             <h2>Description</h2>
             <p>
-                This project is an AI chatbot experience focused on fast, conversational support. The interface is designed for clarity and speed, while
-                the architecture supports reusable components, maintainable styling, and smooth interactions across desktop and mobile.
+                AI chatbot project for Haarlemsewinkels.nl, built with a Preact frontend and a FastAPI backend. The system combines conversational 
+                UX with product-data synchronization and was designed with scalability in 
+                (from an in-process setup toward worker-based architecture for heavier workloads).
             </p>
 
             <ul>
                 Responsibilities:
+                <li>Created UI/UX design for the Chatbot</li>
                 <li>Built and refined the frontend chat experience with reusable React components and responsive layouts.</li>
-                <li>Implemented conversation UI patterns like message grouping, input handling, and loading states.</li>
+                <li>Developed daily datasync with Celery to keep the chatbot up to date</li>
             </ul>
 
             <div className="code-languages">

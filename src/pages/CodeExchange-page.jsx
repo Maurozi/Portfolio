@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import "./Project-page.css"
 import ceBanner from "../assets/CE-banner.png"
 import cePhone1 from "../assets/CE-phone1.png"
+import cePhone2 from "../assets/CE-phone2.png"
 import TypeScriptLogo from "../assets/code-logos/Typescript.png"
 import HTMLLogo from "../assets/code-logos/HTML.png"
 import CSSLogo from "../assets/code-logos/CSS.png"
@@ -26,18 +27,22 @@ export default function CodeExchangePage() {
             <div className="project-gallery">
                 <img src={ceBanner} alt="Code Exchange banner" />
                 <img src={cePhone1} alt="Code Exchange mobile screen" />
+                <img src={cePhone2} alt="Code Exchange mobile screen" />
             </div>
 
             <h2>Description</h2>
             <p>
-                Code Exchange is a collaborative platform concept where developers can share snippets, discuss solutions, and learn from each other.
-                The project focuses on clean UI structure, readable content hierarchies, and a maintainable component architecture for rapid iteration.
+                Code exchange is a practical student Q&A web application, built to let users register, log in, ask questions, post answers, 
+                and manage their own content. The project uses an MVC-style structure with clear separation between controllers, models, and views, and was 
+                designed for maintainability and future feature growth.
             </p>
 
             <ul>
                 Responsibilities:
-                <li>Designed and developed the frontend structure for project discovery, content display, and interaction flows.</li>
-                <li>Implemented reusable components and scalable styling for a consistent product experience.</li>
+                <li>Created UI/UX design for all webpages using Figma prototyping</li>
+                <li>Full Think Make Check cycles + documentation</li>
+                <li>Implemented user authentication, question/answer CRUD operations, and responsive design</li>
+                <li>Worked in MVC</li>
             </ul>
 
             <div className="code-languages">
