@@ -61,7 +61,7 @@ function Home() {
           <Motion.p variants={childFadeUp}>Portfolio website</Motion.p>
           <Motion.h1 variants={childFadeUp}>Mauro van der Duim</Motion.h1>
           <Motion.div className="hero-buttons" variants={childFadeUp}>
-            <button onClick={scrollToAbout}>About Me</button>
+            <button onClick={scrollToAbout}>About me</button>
             <button onClick={scrollToContact}>Contact</button>
             <div className="socials-anchors">
               <a href="https://www.linkedin.com/in/mauro-van-der-duim-79770b3b9"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
