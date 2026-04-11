@@ -110,14 +110,14 @@ function Home() {
 
       <Motion.div className="home-projects" ref={projectsRef} variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
         <div className="project-list">
-          <Link className="project-link" to="/projects/young-voters" aria-label="Open Young Voters project page">
-            <Motion.img className="project-image portrait project-yv-primary" src={yvPhone1} alt="Young Voters project" variants={childFadeUp} whileHover={projectHover} transition={projectHoverTransition} />
+          <Link className="project-link" to="/projects/young-votez" aria-label="Open Young Votez project page">
+            <Motion.img className="project-image portrait project-yv-primary" src={yvPhone1} alt="Young Votez project" variants={childFadeUp} whileHover={projectHover} transition={projectHoverTransition} />
           </Link>
           <Link className="project-link" to="/projects/chatbot" aria-label="Open Chatbot project page">
             <Motion.img className="project-image landscape project-chat-banner" src={chatbotBanner} alt="Chatbot project" variants={childFadeUp} whileHover={projectHover} transition={projectHoverTransition} />
           </Link>
-          <Link className="project-link" to="/projects/young-voters" aria-label="Open Young Voters project page">
-            <Motion.img className="project-image portrait project-yv-secondary" src={yvPhone2} alt="Young Voters project" variants={childFadeUp} whileHover={projectHover} transition={projectHoverTransition} />
+          <Link className="project-link" to="/projects/young-votez" aria-label="Open Young Votez project page">
+            <Motion.img className="project-image portrait project-yv-secondary" src={yvPhone2} alt="Young Votez project" variants={childFadeUp} whileHover={projectHover} transition={projectHoverTransition} />
           </Link>
           <Link className="project-link" to="/projects/chatbot" aria-label="Open Chatbot project page">
             <Motion.img className="project-image portrait project-chat-card" src={chatbotChat} alt="Chatbot project" variants={childFadeUp} whileHover={projectHover} transition={projectHoverTransition} />
