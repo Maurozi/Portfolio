@@ -146,18 +146,27 @@ function Home() {
 
       <Motion.div className="contact" variants={childFadeUp} ref={contactRef} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
         <h1>Contact</h1>
-        <Motion.div className="contact-form" variants={childFadeUp} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }}>
+        <Motion.form
+          className="contact-form"
+          variants={childFadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+          action="https://formspree.io/f/mojpgnvr"
+          method="POST"
+        >
           <p>Are you interested or intrigued by my apps/designs? <br></br>Contact me here:</p>
+          <input type="hidden" name="_subject" value="New portfolio contact submission" />
           <div className="contact-information">
-            <input type="text" placeholder="Your name" />
-            <input type="email" placeholder="Your email" />
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
           </div>
-          <textarea type="text" placeholder="Message" />
-          <button>Send <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <textarea name="message" placeholder="Message" required />
+          <button type="submit">Send <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M12 2a1 1 0 0 1 .932.638l7 18a1 1 0 0 1-1.326 1.281L13 19.517V13a1 1 0 1 0-2 0v6.517l-5.606 2.402a1 1 0 0 1-1.326-1.281l7-18A1 1 0 0 1 12 2Z" clip-rule="evenodd" />
           </svg>
           </button>
-        </Motion.div>
+        </Motion.form>
         <div className="contact-socials">
           <a href="https://www.linkedin.com/in/mauro-van-der-duim-79770b3b9"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd" />
