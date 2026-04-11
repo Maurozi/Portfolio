@@ -1,45 +1,4 @@
 /* HERO */
-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 10px;
-    font-size: clamp(15px, 2.5vw, 20px);
-    line-height: 1;
-    outline: none;
-    border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    background-color: #FFE396;
-    color: #262626ab;
-    transition: all 0.3s ease;
-    text-align: center;
-}
-
-button svg {
-    display: block;
-    width: 1.15em;
-    height: 1.15em;
-    flex-shrink: 0;
-    transition: all 0.3s ease;
-    padding: 0;
-    margin: 0;
-}
-
-button:hover {
-    cursor: pointer;
-    background-color: #fdefc7;
-}
-
-p {
-    font-size: clamp(12px, 2.5vw, 25px);
-}
-
-li {
-    font-size: clamp(12px, 2.5vw, 25px);
-}
-
 .home {
     font-family: "Lato", sans-serif;
     color: #262626;
@@ -68,7 +27,7 @@ li {
 }
 
 .hero-text p {
-  font-size: clamp(20px, 3vw, 30px);
+    font-size: clamp(20px, 3vw, 30px);
 }
 
 .hero-buttons {
@@ -150,7 +109,13 @@ li {
     flex-wrap: wrap;
     gap: 100px;
     padding: 20px;
-} 
+}
+
+.project-link {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
 
 .project-list img {
     object-fit: cover;
@@ -215,7 +180,8 @@ li {
     }
 
     .project-list img.landscape {
-        width: 300px;;
+        width: 300px;
+        ;
         height: auto;
     }
 }
@@ -232,7 +198,8 @@ li {
     }
 
     .project-list img.landscape {
-        width: 200px;;
+        width: 200px;
+        ;
         height: auto;
     }
 }
