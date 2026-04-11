@@ -14,7 +14,7 @@ import Node from "../assets/code-logos/Node.png"
 import Spring from "../assets/code-logos/Spring.png"
 import Docker from "../assets/code-logos/Docker.png"
 
-export default function YoungVotersPage() {
+export default function YoungVotezPage() {
     return (
         <main className="project-page">
             <Link className="project-back" to="/"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">

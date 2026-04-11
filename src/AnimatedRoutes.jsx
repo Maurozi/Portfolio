@@ -2,7 +2,7 @@ import { AnimatePresence, motion as Motion } from 'motion/react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import ChatbotPage from './pages/Chatbot-page.jsx'
-import YoungVotersPage from './pages/YoungVoters-page.jsx'
+import YoungVotezPage from './pages/YoungVotez-page.jsx'
 import CodeExchangePage from './pages/CodeExchange-page.jsx'
 
 function PageTransition({ children }) {
@@ -27,7 +27,7 @@ export default function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path='/' element={<PageTransition><Home /></PageTransition>} />
         <Route path='/projects/chatbot' element={<PageTransition><ChatbotPage /></PageTransition>} />
-        <Route path='/projects/young-voters' element={<PageTransition><YoungVotersPage /></PageTransition>} />
+        <Route path='/projects/young-votez' element={<PageTransition><YoungVotezPage /></PageTransition>} />
         <Route path='/projects/code-exchange' element={<PageTransition><CodeExchangePage /></PageTransition>} />
       </Routes>
     </AnimatePresence>
